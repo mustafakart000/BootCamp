@@ -35,8 +35,35 @@ public class ArrayListPracticeDay16 {
         System.out.println(prices);//[23, 35]
         nums.addAll(prices);
         System.out.println(nums);//[32, 23, 35]
+        nums.addAll(ages); //[32, 23, 35, 21, 32, 99, 43, 54, 65]
+        System.out.println(nums);
 
 
+        //ArrayList'lerde herhangi bir eleman nasil secilir?
+
+       int el1= nums.get(4);
+        System.out.println(el1);//[32, 23, 35, 21, 32, 99, 43, 54, 65]
+                                // 32
+        //ArrayList'in bos olup olmadigini nasil anlariz?
+        boolean bos1= nums.isEmpty();
+        System.out.println(bos1);//false
+
+        //Arraylist'de bir eleman nasil degistirilir?
+        nums.set(3,200);
+        System.out.println(nums);
+        //Example 1: nums ArrayList'indeki tum tek sayilari 11 artirdiktan sonra ekrana yazdiriniz
+        //[32, 23, 35, 200, 32, 99, 43, 54, 65]
+
+        for (int w: nums){
+            if(w%2!=0){
+                nums.set(nums.indexOf(w),w+11);
+            }
+        }
+        System.out.println(nums);
+
+        Integer sayi = 32;
+        nums.remove(2);
+        System.out.println(nums); // [34, 46, 200, 32, 110, 54, 54, 76]
     }
 
 }
