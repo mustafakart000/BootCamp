@@ -69,7 +69,42 @@ public class ArrayLİst01 {
             }
         }
         System.out.println(salary);
+//        Example 4:  iki arrayin eşit olup olmadığını kontrol edip yazınız
+        // Note: iki arrayList'in eşit olması için, elemanlar eşit olmalı ve aynı elemanlar aynı index de olmalıdır
+        List<Character> m = new ArrayList<>();
+        m.add('x');
+        m.add('y');
+        m.add('z');
+        m.add('t');
+
+        List<Character> n = new ArrayList<>();
+        n.add('x');
+        n.add('y');
+        n.add('z');
+
+                int counter = 0;//flag
+                for (int i = 0; i < m.size(); i++) {
+                    if (m.size()!=n.size()){
+                        counter++;
+                        System.out.println("Listler eşitdeğildir");
+                        break;
+                    }
+                    else if (m.get(i) != n.get(i)) {
+                        System.out.println("Listler esit degildir");
+                        counter++;
+                        break;
+
+                    }
+
+                }if (counter == 0) {
+            System.out.println("listler eşittir");
+
+                }
+
+
+
 
     }
-
 }
+
+
