@@ -1,10 +1,7 @@
 package arraylist.arraylistday16.Day17ArrayList;
 
 import javax.print.attribute.IntegerSyntax;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ArrayList03 {
     public static void main(String[] args) {
@@ -29,6 +26,8 @@ public class ArrayList03 {
 
         }
         System.out.println(minFark);
-
+        int[] dizi={9,3,7,1,6,4,1};
+        Arrays.sort(dizi,1 ,4);
+        System.out.println(Arrays.toString(dizi));
     }
 }

@@ -74,7 +74,7 @@ public class arrayList16day {
             System.out.println(bos2);//true
 
             //ArrayList'de bir eleman nasil degistirilir?
-            nums.set(3, 200);
+            nums.set(3, 200);        // [21, 50, 23, 185, 18, 20, 23, 185]
             System.out.println(nums);// [21, 50, 23, 200, 18, 20, 23, 185]
 
             //Example 1: nums ArrayList'indeki tum tek sayilari 11 artirdiktan sonra ekrana yazdiriniz
@@ -92,7 +92,8 @@ public class arrayList16day {
             //Example 2: ArrayList'den 34 elemaninin ilk gorunumunu siliniz
             //Note 1: Tum tamsayilar Java icin aksi soylenmedikce primitive'dir, yani "int" dir.
             //Note 2: "primitive" ler ArrayList'lerin elemani olamazlar.
-            //Note 3: "primitive" i "Wrapper Class" a cevirirseniz, non-primitive olur ve non-primitive ler ArrayList'lerin elemani olur, index olamaz
+            //Note 3: "primitive" i "Wrapper Class" a cevirirseniz, non-primitive olur ve non-primitive ler
+            // ArrayList'lerin elemani olur, index olamaz
             Integer sayi = 34;
             nums.remove(sayi);
             System.out.println(nums);// [32, 50, 200, 18, 20, 34, 196]
