@@ -1,4 +1,4 @@
-package arraylist.arraylistday16.Day17ArrayList;
+package questionsbank;
 
 import java.util.ArrayList;
 import java.util.List;
