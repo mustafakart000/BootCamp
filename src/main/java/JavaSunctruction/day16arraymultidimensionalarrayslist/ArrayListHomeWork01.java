@@ -1,8 +1,4 @@
-package day16arraymultidimensionalarrayslist;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+package JavaSunctruction.day16arraymultidimensionalarrayslist;
 
 public class ArrayListHomeWork01 {
     public static void main(String[] args) {

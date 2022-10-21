@@ -1,4 +1,4 @@
-package day18arraylistssbyvaleu;
+package JavaSunctruction.day18arraylistssbyvaleu;
 
 import java.util.ArrayList;
 import java.util.List;

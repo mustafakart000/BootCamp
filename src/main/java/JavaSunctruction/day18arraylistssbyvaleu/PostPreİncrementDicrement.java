@@ -1,4 +1,4 @@
-package day18arraylistssbyvaleu;
+package JavaSunctruction.day18arraylistssbyvaleu;
 
 public class PostPreİncrementDicrement {
     public static void main(String[] args) {

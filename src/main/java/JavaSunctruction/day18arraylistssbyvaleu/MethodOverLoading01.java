@@ -1,4 +1,4 @@
-package day18arraylistssbyvaleu;
+package JavaSunctruction.day18arraylistssbyvaleu;
  /*Method Overloading nasıl yapılır?
          1)Method isimleri aynı olmalıdır.
          2)Method parametreleri farklı olmalıdır.

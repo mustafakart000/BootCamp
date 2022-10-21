@@ -1,4 +1,4 @@
-package day16arraymultidimensionalarrayslist;
+package JavaSunctruction.day16arraymultidimensionalarrayslist;
 
 import java.util.Arrays;
 

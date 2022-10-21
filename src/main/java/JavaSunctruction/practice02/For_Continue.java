@@ -1,8 +1,5 @@
-package PracticeAdvenced.practice02;
+package JavaSunctruction.practice02;
 
-import javax.imageio.plugins.tiff.TIFFTag;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class For_Continue {

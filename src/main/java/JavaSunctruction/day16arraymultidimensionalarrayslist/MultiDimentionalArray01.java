@@ -1,4 +1,4 @@
-package day16arraymultidimensionalarrayslist;
+package JavaSunctruction.day16arraymultidimensionalarrayslist;
 /*
 *Array veya Collection varsa "for-each-loop" kullanmak tercihiniz olsun
 *Array veya Collection var ama "index kullanmak zorundasiniz...

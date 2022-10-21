@@ -1,4 +1,4 @@
-package PracticeAdvenced.practice02;
+package JavaSunctruction.practice02;
 
 public class WorkingExample {
 

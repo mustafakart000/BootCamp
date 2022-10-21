@@ -1,4 +1,4 @@
-package day18arraylistssbyvaleu;
+package JavaSunctruction.day18arraylistssbyvaleu;
 
 public class Varargs01 {
     /*

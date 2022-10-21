@@ -1,4 +1,4 @@
-package PracticeAdvenced.practice02;
+package JavaSunctruction.practice02;
 
 import java.util.Scanner;
 

@@ -1,7 +1,6 @@
-package day16arraymultidimensionalarrayslist;
+package JavaSunctruction.day16arraymultidimensionalarrayslist;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ArrayList01 {

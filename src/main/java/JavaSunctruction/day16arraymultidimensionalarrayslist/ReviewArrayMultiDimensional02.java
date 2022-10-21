@@ -1,6 +1,4 @@
-package day16arraymultidimensionalarrayslist;
-
-import java.io.PrintStream;
+package JavaSunctruction.day16arraymultidimensionalarrayslist;
 
 public class ReviewArrayMultiDimensional02 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package arraylist.arraylistday16.Day17ArrayList;
+package JavaSunctruction.Day17ArrayList;
 
 import javax.print.attribute.IntegerSyntax;
 import java.util.*;

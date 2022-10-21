@@ -1,5 +1,4 @@
-package PracticeAdvenced.practice02;
-import java.math.*;
+package JavaSunctruction.practice02;
 import java.util.Arrays;
 
 

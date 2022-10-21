@@ -1,4 +1,4 @@
-package arraylist.arraylistday16;
+package JavaSunctruction;
 
 
 import java.util.Arrays;
