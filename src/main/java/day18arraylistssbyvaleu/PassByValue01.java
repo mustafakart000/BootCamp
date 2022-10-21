@@ -8,6 +8,11 @@ public class PassByValue01 {
       change(x);
 
       System.out.println("x = " + x);//x =
+
+        int ucret=100;
+        int kopya= indirim(ucret);//
+        System.out.println("kopya = " + kopya);//ucret = 100
+
 /*
 1)Java, variable'ların orijinal değerlerini korumak ister.
 2)Variable metotlar içinde kullanıldığında, Java metodun içine
@@ -23,5 +28,9 @@ orijinal değer korunmuş olur. Bu sisteme PassByValoue denir.
     }
     public static void change(int a){
         System.out.println(a*3);
+    }
+    //void dışındaki return typle'larda method badisi içinde return keywod kullanılmalıdır.
+    public static int indirim(int gomlekUcreti){
+        return gomlekUcreti-10;
     }
 }
