@@ -11,8 +11,8 @@ public class DateTime01 {
         //Example 1:Anlik tarihi(current date) ekrana yazdıran kodu yazınız.
         LocalDate currentDate = LocalDate.now();
         System.out.println("currentDate = " + currentDate);//currentDate = 2022-10-21
-        //Example 2:Anlik zamani (current time) ekrana yazdıran kodu yazınız.
 
+        //Example 2:Anlik zamani (current time) ekrana yazdıran kodu yazınız.
         LocalTime currentTime =  LocalTime.now();
         System.out.println("currentTime = " + currentTime);//currentTime = 20:45:55.571410400
 
@@ -28,7 +28,10 @@ public class DateTime01 {
         System.out.println("currentDateTimeIstanbul = " + currentDateTimeIstanbul);
 
         //Example 6: Bugunden 789 gun sonra emekli olacağınıza göre emeklilik tarihini hesaplayan kodu yazınız
-        LocalDate countDate=LocalDate.of(2022, 10, 21);
+        LocalDate countDate=LocalDate.of(2022, 10, 21);// bu [31]. satırın Amacaı yazdırıken anlaşılmaz
+        // çünkü bu satır yarın emeklilik tarihini yeniden hesaplamak için yazlır 789 bugun ise yarın 788 günü kalır.
+        // bu yüzden kaç gün kaldıysa o günün tarihini koyariz ki yarın tekrar kaç gün kaldığını biz ona vermeden o bize
+        // otomatik versin
         LocalDate currentDate2=  LocalDate.now();
         LocalDate retireDate= currentDate2.plusDays(789);
         System.out.println("retireDate: "+retireDate);//retireDate: 2024-12-18
@@ -40,12 +43,23 @@ public class DateTime01 {
         Long diff= ChronoUnit.DAYS.between(dobAli,dobVeli);
         System.out.println("diff = " + diff);
         //Example   8: Tom Aliden 3 yıl 8 ay 13 sonra doğdu ali ise veliden 1 yıl 15 gün önce doğdu.
-        // tomun doğum tarihi 18/2011 ise Veli ve Ali nin doğum Tarihlerini Bulunuz.
+        // tomun doğum tarihi 11/18/2011 ise Veli ve Ali nin doğum Tarihlerini Bulunuz.
+        System.out.println();
+        System.out.println("TOM ALİ VELİ DOB");
 
-//        LocalDate dobTom=LocalDate.of(2011,11,18);
-//        LocalDate aliTomFark= currentDate2.plusYears(3).plusMonths(8).plusDays(13);
-//        System.out.println("aliTomFark = " + (aliTomFark-dobTom));
-//        Long diff2=ChronoUnit.DAYS.between(dobAli,dobTom);
+        LocalDate dobTom=LocalDate.of(2011,11,18);
+        System.out.println("Tom'un Doğum Tarihi = " + dobTom);//dobTom = 2022
+
+        LocalDate aliDogumDate= dobTom.minusYears(3).minusMonths(8).minusDays(13);
+        System.out.println("ali nin Doğum Tarihi = " + aliDogumDate);//dobTom = 2022
+
+        LocalDate veliDogumDate= aliDogumDate.plusYears(1).plusMonths(2).plusDays(15);
+        System.out.println("Veli nin Doğum Tarihi = " + veliDogumDate);//dobTom = 2022
+
+
+
+        System.out.println("TOM ALİ VELİ DOB");
+        System.out.println();
 
         //Example   8:İstanbulun fethi ile Cumhuriyetin kurulması arasında kaç ay olduğunu gösteren kodu yazınız
 
@@ -54,10 +68,10 @@ public class DateTime01 {
         LocalDate istanbulunFethi= LocalDate.of(1453,5,29);
         LocalDate cumhuriyetKurulusu= LocalDate.of(1923,10,29);
 
-        Long aySayisi= ChronoUnit.MONTHS.between(istanbulunFethi,cumhuriyetKurulusu);
+        Long aySayisi= ChronoUnit.MONTHS.between(istanbulunFethi, cumhuriyetKurulusu);
         System.out.println("aySayisi = " + aySayisi);//aySayisi = 5645
 
-        //Example 9: Verilen tarih'in hangi burcta oldugunu gosteren kodu yaziniz
+        //Example 9: Verilen tarih'in hangi burcta oldugunu gosteren kodu yaziniz.
         LocalDate myDate = LocalDate.of(1989, 5, 13);
 
         int day = myDate.getDayOfMonth();
