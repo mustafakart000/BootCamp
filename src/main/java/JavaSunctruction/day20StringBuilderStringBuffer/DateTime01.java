@@ -17,5 +17,12 @@ public class DateTime01 {
         System.out.println("Ali: " + dobAli);
         System.out.println("Veli: " + dobVeli);
 
+        String str = "Ali!  13 yasinda  , 15 yasında olduğunu dusunuyorum.";
+        String Unspace= str.replaceAll("\\s", "");
+        System.out.println("Unspace = " + Unspace);
+        System.out.println("Unspace.length() = " + Unspace.length());
+        //Örnek8: String da boşluktan farklı kaç karakter kullanılıyor code yaziniz .
+        
+        
     }
 }
