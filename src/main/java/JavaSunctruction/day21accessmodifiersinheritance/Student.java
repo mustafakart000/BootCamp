@@ -33,4 +33,4 @@ public class Student {
         //private olanlar sadece olsturulduklari Class icinde kullanilabilirler
         private String stdId = "20206517004";
     }
-}
+
