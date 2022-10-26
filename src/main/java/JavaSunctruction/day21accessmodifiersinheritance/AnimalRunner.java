@@ -33,6 +33,7 @@ public class AnimalRunner {
     public static void main(String[] args) {
         Cat c1 = new Cat();
         c1.eat();
+        c1.eat2(5,3);
         c1.drink();
         c1.meow();
         Dog c2 = new Dog();
