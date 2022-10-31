@@ -1,4 +1,4 @@
-//package day22inheritancepolymorphism;
+//package JavaSunctruction.day22inheritancepolymorphism;
 //
 //public class Runner {
 //    public static void main(String[] args) {

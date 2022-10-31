@@ -4,27 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class Takimlar {
-int takimSayisi;
-    static int sumPuan;
+    int takimSayisi;
+    static int puanSum=  (-1)*3;
+    int howMany;
 
     public void takimlarSay(int takimSayisi) {
-            this.takimSayisi = takimSayisi;
+        this.puanSum = takimSayisi*(takimSayisi-1);
 
     }
 
-    public void takimlar(){
+    public void TakimPuanlari(int puanAl) {
 
-        Scanner scanner = new Scanner(System.in);
+        if (howMany!=( takimSayisi- 1)){
+            this.puanSum-=puanAl;
+            howMany++;
 
-        List<String> takimList = new ArrayList<>();
-        while (takimSayisi!=takimList.size()) {
-            for (int i=0; i<=takimSayisi;i++ ) {
-                System.out.println("Takım adı giriniz: ");
-                String takimListGet = scanner.nextLine();
-                takimList.add(takimListGet);
-                }
+
         }
+
     }
+
+
+
 
 }
+//</editor-fold>
+//</editor-fold>

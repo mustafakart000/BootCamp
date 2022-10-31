@@ -1,6 +1,6 @@
-package day22inheritancepolymorphism.secondlesson;
+package JavaSunctruction.day23inheritancepolymorphism.polymorhism;
 
-public class Honda extends Car{
+public class Honda extends Car {
     public String color;
     public Honda() {
         super("white", 54000);

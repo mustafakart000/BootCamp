@@ -1,4 +1,4 @@
-package day22inheritancepolymorphism.secondlesson;
+package JavaSunctruction.day23inheritancepolymorphism.polymorhism;
 
 public class VehicleRunner {
     public static void main(String[] args) {

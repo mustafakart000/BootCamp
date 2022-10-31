@@ -1,4 +1,4 @@
-package day23inheritancepolymorphism;
+package JavaSunctruction.day23inheritancepolymorphism.courseRunner;
 
 public class Art extends Courses {
 

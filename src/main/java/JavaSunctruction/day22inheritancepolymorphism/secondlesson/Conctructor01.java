@@ -1,4 +1,4 @@
-package day22inheritancepolymorphism.secondlesson;
+package JavaSunctruction.day22inheritancepolymorphism.secondlesson;
 
 public class Conctructor01 {
 

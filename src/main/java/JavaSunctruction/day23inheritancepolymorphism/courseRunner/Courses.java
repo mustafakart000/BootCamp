@@ -1,4 +1,4 @@
-package day23inheritancepolymorphism;
+package JavaSunctruction.day23inheritancepolymorphism.courseRunner;
 
 public class Courses {
     public void liveSessions(){
@@ -10,4 +10,6 @@ public class Courses {
     public Courses(String s){
         System.out.println("Constructor B");
     }
+
+
 }
