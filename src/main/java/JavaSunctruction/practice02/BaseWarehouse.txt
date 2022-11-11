@@ -18,7 +18,7 @@
     *                   urun adedi 0dan az olamaz. 0 olunca urun tanimlamasi silinmesin. sadece miktari 0 olsun.
     *        ===> yaptigimiz tum degisiklikler listede de gorunsun.
     *
-    *
+    *s
     *           id    ismi   ureticisi  miktari       birimi    raf
     *        ---------------------------------------------------------------
     *        or: 1000    un    hekimoglu  0        cuval     null
