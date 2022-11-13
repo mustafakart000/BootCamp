@@ -1,6 +1,5 @@
-package JavaSunctruction.practice02;
+package JavaSunctruction.practice_bootCamp;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Loop02 {

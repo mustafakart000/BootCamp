@@ -1,4 +1,4 @@
-package JavaSunctruction.practice02;
+package JavaSunctruction.practice_bootCamp;
 
 public class Q06_Static_Butce_Runner {
 

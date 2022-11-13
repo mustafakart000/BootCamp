@@ -1,4 +1,4 @@
-package JavaSunctruction.practice02;
+package JavaSunctruction.practice_bootCamp;
 
 public class BaseWarehouse {
     public static void main(String[] args) {
