@@ -21,14 +21,14 @@ INSERT INTO calisanlar02 VALUES(123456789, 'Ali Can', 'Istanbul');
 INSERT INTO calisanlar02 VALUES(234567890, 'Veli Cem', 'Ankara'); 
 INSERT INTO calisanlar02 VALUES(345678901, 'Mine Bulut', 'Izmir');
 
---Eğer iki sutunu birleştirmek stersek aşağıdaki örnekteki gibi concat kullanabılırız.
+--Eğer iki sutunu birleştirmek istersek aşağıdaki örnekteki gibi concat kullanabılırız.
 Select calisan_id AS id, calisan_isim || calisan_dogdugu_sehir as Calisan_yer_dogdugu_yer from calisanlar02 
 --2. yol
 Select calisan_id AS id, concat (calisan_isim,' ', calisan_dogdugu_sehir) as Calisan_yer_dogdugu_yer from calisanlar02 
 --eğer boşluk koymak istersek birleştirme arasına örnek => calisan_isim || ' ' || calisan_dogdugu_sehir
 
 
---IS NULL CONDITION(Arama yapılan kayıtta nul değerleri gösterir.)
+--IS NULL CONDITION(Arama yapılan kayıtta null değerleri gösterir.)
 
 Create table insanlar 
 (
@@ -40,13 +40,13 @@ name varchar(50),
 INSERT INTO insanlar VALUES(123456789, 'Ali Can', 'Istanbul');  
 INSERT INTO insanlar VALUES(234567890, 'Veli Cem', 'Ankara');  
 INSERT INTO insanlar VALUES(345678901, 'Mine Bulut', 'Izmir');  
-INSERT INTO insanlar (ssn, adres) VALUES(456789012, 'Bursa'); 
+INSERT INTO insanlar (ssn, adres) VALUES(456789012, 'Bursa'); --(ssn, adres) sadece bu iki paremetreye değer atar.
 INSERT INTO insanlar (ssn, adres) VALUES(567890123, 'Denizli');
 select * from insanlar
 
 select ssn,name from insanlar where name is null;
 
---is not null means  it call other values
+--"is not null" means  it call other values
 
 select ssn,name from insanlar where name is not null;
 
@@ -63,8 +63,8 @@ set name='no name' where name is null;
 	ORDER BY komutu sadece SELECT komutu Ile kullanilir
 	
 	
-Tablolardaki verileri sıralamak için ORDER BY komutu kullanırız
-Büyükten küçüğe yada küçükten büyüğe sıralama yapabiliriz
+Tablolardaki verileri sıralamak için ORDER BY komutu kullanırız.
+Büyükten küçüğe yada küçükten büyüğe sıralama yapabiliriz.
 Default olarak küçükten büyüğe sıralama yapar (asc yazmaya gerek yok)
 Eğer BÜYÜKTEN KÜÇÜĞE sıralmak istersek ORDER BY komutundan sonra DESC komutunu kullanırız
 
@@ -116,16 +116,16 @@ CREATE TABLE manav
 isim varchar(50),  Urun_adi varchar(50),  Urun_miktar int
 );
 
-INSERT INTO manav VALUES( 'Ali', 'Elma', 5);
-INSERT INTO manav VALUES( 'Ayse', 'Armut', 3);
-INSERT INTO manav VALUES( 'Veli', 'Elma', 2);
-INSERT INTO manav VALUES( 'Hasan', 'Uzum', 4);
-INSERT INTO manav VALUES( 'Ali', 'Armut', 2);
-INSERT INTO manav VALUES( 'Ayse', 'Elma', 3);
-INSERT INTO manav VALUES( 'Veli', 'Uzum', 5);
-INSERT INTO manav VALUES( 'Ali', 'Armut', 2);
-INSERT INTO manav VALUES( 'Veli', 'Elma', 3);
-INSERT INTO manav VALUES( 'Ayse', 'Uzum', 2);
+INSERT INTO manav VALUES( 'Ali', 'Elma', 	5);
+INSERT INTO manav VALUES( 'Ayse', 'Armut', 	3);
+INSERT INTO manav VALUES( 'Veli', 'Elma', 	2);
+INSERT INTO manav VALUES( 'Hasan', 'Uzum', 	4);
+INSERT INTO manav VALUES( 'Ali', 'Armut', 	2);
+INSERT INTO manav VALUES( 'Ayse', 'Elma', 	3);
+INSERT INTO manav VALUES( 'Veli', 'Uzum', 	5);
+INSERT INTO manav VALUES( 'Ali', 'Armut', 	2);
+INSERT INTO manav VALUES( 'Veli', 'Elma', 	3);
+INSERT INTO manav VALUES( 'Ayse', 'Uzum', 	2);
 
 select * from manav
 

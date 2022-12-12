@@ -1,4 +1,4 @@
-package JavaSunctruction.day32maps;
+package JavaInstruction.day32maps;
 
 import java.util.*;
 

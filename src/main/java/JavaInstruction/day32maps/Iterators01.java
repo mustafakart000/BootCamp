@@ -24,5 +24,6 @@ public class Iterators01 {
             itr.set(el+"!");
         }
         System.out.println("Listİterator ile myList: "+myList);
+
     }
 }
