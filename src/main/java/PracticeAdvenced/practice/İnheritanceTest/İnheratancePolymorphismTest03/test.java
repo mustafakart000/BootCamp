@@ -1,4 +1,4 @@
-package İnheritanceTest.İnheratancePolymorphismTest03;
+package PracticeAdvenced.practice.İnheritanceTest.İnheratancePolymorphismTest03;
 
 public class test {
     public static void main(String[] args) {

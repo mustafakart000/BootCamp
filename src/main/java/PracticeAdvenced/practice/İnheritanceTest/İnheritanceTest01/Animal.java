@@ -1,4 +1,4 @@
-package İnheritanceTest.İnheritanceTest01;
+package PracticeAdvenced.practice.İnheritanceTest.İnheritanceTest01;
 
 public class Animal {
     public int weight=2;
