@@ -1,0 +1,105 @@
+ * * * ABSTRACT vs INTERFACE * * *
+
+ABSTRACT vs INTERFACE
+   1) Abstract :
+    1.1 - Class`dir.
+    1.2 - Abstract ve concrete method`lar konabilir.
+    1.3 - Kismi olarak abstraction saglar.
+    1.4 - Birden fazla abstract class`a direk child olunamaz. Coklu inheritance`i desteklemez.
+    1.5 - Hiz acisindan avantajlidir
+    1.6 - Icindeki tum nesnelerin public olmasi zorunlu degildir.
+    1.7 - Soyut olmayan metodlar static olarak tanimlanabilir.
+    1.8 - Abstract class constructor`a sahiptir
+    1.9 - "Abstract class" larda normal Class'lardaki gibi her turlu variable olusturulabilir
+
+
+   2) Interface :
+   2.1 - Class degildir.
+   2.2 - Sadece abstract method`lar konabilir.Ama istersek interface'ler icinde de
+         "default" ve "static" keywordler kullanarak concrete methodlar olusturabiliriz
+   2.3 - Tam abstraction (soyutluk) saglar.interface'lerdeki tum method'lar "abstract" olmak zorundadir.
+   2.4 - Bir class`dan istediginiz kadar interface`i inherit edebilirsiniz. Coklu inheritance`a uygundur.
+   2.5 - Hiz acisindan abstract class`a gore yavastir.
+   2.6 - Icindeki tum nesnelerin public olmasi gerekir.
+   2.7 - Normalde Method'lar static olamaz ancak Interface'lerin icine concarate method konulamaz.
+        Devoloper'lar bu sorunu cozebilmek icin istisnai bir durum olarak; tipki kirmizi isikta
+        gecilmez; amaa itfaiye polis gecebilir gibi istisnai olarak concreate method uretebilmek icin
+        default ve static keyword kullanarak body'si olan method olusturulabilir.static keyword'u ile olusturursaniz
+        static method olusturmmus olursunuz.
+   2.8 - Interface constructor`a sahip degildir
+   2.9 - "Interface" lerde ise variable'lar, public static ve final olmak zorundadir.
+
+    * Abstract method'lar sadece ne yapılacağını söylerler.
+    * Concrete method'lar ne yapilacağı ile birlikte nasıl yapılacağıı(how to do) da söyler
+    * "interface" 'ler bir yapilacaklar isler listedir (to do list)
+
+
+        "abstract method"lar sadece NE yapılacağını(WHAT TO DO) söyler
+        "concrete method"lar ne yapılacağı ile birlikte NASIL yapılacağını(HOW TO DO) da söyler
+
+        "interface"ler bir yapılacak işler listesidir.(TO DO LIST)
+
+        "multiple parent interface" kullandığınızda aynı method ismi ile birden fazla method oluşturursanız bu method'ların
+        return type'ları aynı olmalıdır. Aksi takdirde hata verir.
+
+        "interface" lerde constructor olmadığı için interface'lerden object oluşturulamaz.
+        "abstract class" lar class oldukları için constructor vardır. Ama constructor'lar abstract class'larda object oluşturamazlar.
+
+         Child ----- Parent
+     Class ----> Interface     ==> implements
+     Class ----> Class         ==> extends
+     Interface ----> Interface ==> extends
+     Interface ----> Class     ==> Impossible
+
+     *interface'lerdeki tüm variable'lar otomatik olarak(default) "public"dir.
+     *interface'lerdeki tüm variable'lar otomatik olarak(default) "final"dir.
+     *interface'lerdeki tüm variable'lar otomatik olarak(default) "static"dir.
+
+     Soru: "Abstract Class" ile "Interface" in farklari nelerdir?
+            1)Method
+                 "Abstract Class" hem abstract hem de concrete method lar icerebilir.
+                 "Interface" ler ise sadece abstract method'lar icerir.
+                 Ama istersek interface'ler icinde de "default" ve "static" keyword'ler kullanarak concrete method lar olusturabiliriz.
+
+            2)Variable
+                 "Abstract Class" larda normal Class'lardaki gibi her turlu variable olusturulabilir.
+                 "Interface" lerde ise variable'lar public static ve final olmak zorundadir.
+
+            3)Inheritance
+                 "Abstract Class" lar class olduklari icin multiple inheritance'a musaade etmezle.
+                 "Interface" ler ise multiple inheritance'i desteklerler.
+
+            4)Object Creation
+                 "Abstract Class" larda constructor vardir ama object olusturmada kullanilmazlar.
+                 "Interface" lerde ise constructor olmadigindan object olusturulamaz.
+
+
+                 Collection: birden fazla datanın depolanması.
+                 Array ilkel bu yüzden collectionlara dahil değil.
+                 List'ler collection'lara dahil.
+
+                 Collection diyince bunlar aklınıza gelmeli:
+                 1)List  i)ArrayList ii)LinkedList
+                 2)Set
+                 3)Queue
+
+                 >List'lere çoklu ve tekrarlı data depolamak istediğimizde ihtiyaç duyarız, Ör:bir okuldaki öğrenci isimleri.
+                 >>Set'lere çoklu ama tekrarsız data depolamak istersek ihtiyaç duyarız, Ör: bir okuldaki öğrenci ID'leri.
+                 --Set ve List'i amacına göre kullanın.
+                 >>>Queue'lara FIFO(first in first out) veya LIFO(last in firts out) gerektiğinde Queue kullanılır, Ör: bankadaki günlük müşteriler.
+
+
+                    ArrayList'ler ayni data tipine sahip birden fazla data'yi depolamak icin kullanilir.
+                          Array ile ArrayList'in farki nedir?
+
+                             1)Array olustururken Array'in icine kac tane eleman koymamiz gerektigini soylemeliyiz, soyledigimiz eleman sayisindan fazla eleman koyamayiz.
+                               Array'ler eleman sayisinda "fixed" dirler.
+                               ArrayList'leri olustururken eleman sayisi soylemeye gerek yok, cunku ArrayList'ler eleman sayisinda "flexible"(esnek) dirlar.
+
+                             2)Array'lerin icine "primitive" ve "reference" lar konabilir.
+                               ArrayList'lerin icine ise sadece "non-primitive" ler konulur.
+
+                             3)Array'ler super fast, cok hizli. Array'ler memory i cok az kullanir.
+
+                              Note: Eleman sayisi kesin belli olan coklu datalari depolamak icin Array kullaniriz, ama
+                                   eleman sayisi degisken olan coklu datalar icin Array kullanma riskini almayin

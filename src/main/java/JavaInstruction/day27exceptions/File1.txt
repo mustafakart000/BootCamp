@@ -1,0 +1,7 @@
+java is easy.
+java is object Oriented Programming Language.
+OOp has four principles;
+1)Inheritance
+2)Polymorphism
+3)Encapsulation
+4)Abstraction

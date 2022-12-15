@@ -1,0 +1,5 @@
+BufferedReader br = new BufferedReader(new FileReader());
+how to use it
+1.Copy with absolute path
+C:\Users\mstf-\OneDrive\Documents\GitHub\BootCamp\src\main\java\PracticeAdvenced\practice\practice10\helloWord.txt
+2.you can remove before from\src.
