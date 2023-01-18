@@ -24,8 +24,7 @@ public class StudentController {
 
     @Autowired
     private StudentService studentService;
-    @Autowired
-    private StudentRepository studentRepository;
+
 
 
     //!!!get All Students (tüm öğrenciler gelsin)
