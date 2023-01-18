@@ -34,6 +34,7 @@ public class GenericTypeTwoParam <S,U> {
         System.out.println(obj1);
         System.out.println(obj2);
 
+
     }
 
 

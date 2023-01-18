@@ -17,8 +17,9 @@ public class GenericUpperBound<T extends Number> { //!!!Üstten Sınırlıyoruz 
                 sum+=t.doubleValue(); // gelen bütün değerleri double tipine döndürüyor.
             }
 
-            double avg= sum/numberArray.length;
-            return avg;
+            double avg;
+            avg = sum/numberArray.length;
+        return avg;
 
     }
 
