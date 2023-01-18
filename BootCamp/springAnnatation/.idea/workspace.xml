@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4c117a2-5489-442d-b44c-c9f94f9dfde7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/app/MyApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/repository/CloudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/repository/LocalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/service/MeetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/service/TeacherCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moc/service/ZoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/app/MyApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/repo/CloudRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/repo/LocalRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/repo/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/service/MeetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/service/ZoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/app/MyApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/CloudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/LocalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/MeetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/ZoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/app/myApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/repository/CloudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/repository/LocalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/service/ConnectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/service/FaceTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe2/service/MeetGoogle.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2K66DBcMDX12mt1yEOxlPcPXfmy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mstf-\OneDrive\Documents\GitHub\BootCamp\springAnnatation\src\main\java\com\tpe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.poc.app.MyApp">
+    <configuration name="MyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tpe.app.MyApp" />
+      <module name="springAnnatation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tpe.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.poc.app.MyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.poc.app.MyApp" />
+      <module name="springAnnatation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.poc.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tpe2.app.myApp" />
+      <module name="springAnnatation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tpe2.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.poc.app.MyApp" />
+        <item itemvalue="Application.myApp" />
+        <item itemvalue="Application.MyApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4c117a2-5489-442d-b44c-c9f94f9dfde7" name="Changes" comment="" />
+      <created>1673282566146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673282566146</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

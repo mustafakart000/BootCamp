@@ -1,0 +1,14 @@
+SUDO CODE
+
+1-) package:core_java_graduation_project
+
+   *) checking account
+   *) saving account
+   *) witdhdraw
+   *) deposit
+2-) *double checkingBalance; (bakiye)
+    *double savingBalance;   (bakiye)
+
+    int accountNumber =hesap Numarasi //hesap numarası küsüratsızdır (int).
+    int pinNumber =password
+            iki giriş de doğruysa onaylandı

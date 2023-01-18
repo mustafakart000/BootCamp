@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration><!--Configuration buradan başlıyor-->
+
+    <session-factory>
+        <!--arka planda kullanacağımız hangi database de çalışacağımızı yazıyor örnek satırda postgresql.drive gibi-->
+        <property name = "hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!--çalıştığımız datebase'in adresini yazıyoruz-->
+        <property name="connection.url">jdbc:postgresql://localhost:5432/courses_db</property>
+        <!--datebase deki kullanıcı adı ve şifremizi burada kullanıyoruz -->
+        <property name="connection.username">dev_user</property>
+
+        <property name="connection.password">dev_password</property>
+
+        <!-- The SQL types not same for the all databases, so that specific database will have specific dialect -->
+        <!--database'in hangi database server olduğunu belirtmemizin nedeni konuşma dilini belirlemek dialect den sonra
+        yazıyoruz örneğin org.hibernate.dialect.PostgreSQL9Dialect gibi -->
+        <property name = "hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+
+        <!-- ddl.auto create ise uygulama her çalıştırıldığında schema yeniden oluşturulur.
+             update: schema silinmez değişiklik var ise güncellenir.
+             create-drop: schemanızı uygulama çalıştırıldığında oluşturuyor, sonlandığında schema siliniyor.
+             validate: schema'yı validate yapıyor.
+             none: yukarıdakilerin hiç birisini yapmıyor.
+         -->
+        <!--gelecek haftaya salı günü açıklayacak-->
+        <!--Update Kısımına create-drop yazabiliriz çünkü oluşturduğumuz tabloyu bu yöntem ile silebiliriz.
+        bu bize aynı primary key  eklenmeyeceği için yeniden tabloyu ekleme imkanı tanır-->
+        <property name="hbm2ddl.auto">update</property>
+        <!--sql kodlarını görmek isersek alttaki kodu true yapalım-->
+        <property name="show_sql">true</property>
+        <!--çıktıdaki sql kodlarını daha anlaşılır hale getiriyor-->
+        <property name="format_sql">true</property>
+
+
+       <!-- <mapping class ="com.hb05.manytoone.Student05"/>
+        <mapping class ="com.hb05.manytoone.University"/> yapısını kullanmadan ENtitiy Classlarımı ekleyebilirim-->
+<!--        <property name="hibernate.cache.use_second_level_cache">true</property>-->
+<!--        <property name="hibernate.cache.use_query_cache">true</property>-->
+
+<!--        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.jcache.internal.JCacheRegionFactory</property>-->
+<!--        <property name="hibernate.javax.cache.provider">org.ehcache.jsr107.EhcacheCachingProvider</property>-->
+
+    </session-factory>
+
+</hibernate-configuration>
