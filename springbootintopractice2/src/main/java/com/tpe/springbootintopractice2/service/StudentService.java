@@ -24,5 +24,6 @@ public class StudentService {
             throw new ConflictException("Email is already exist");
 
         }
+        studentRepository.save(student);
     }
 }

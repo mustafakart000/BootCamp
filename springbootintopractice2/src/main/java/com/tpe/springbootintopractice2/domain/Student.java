@@ -9,8 +9,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
-@AllArgsConstructor
-@NoArgsConstructor
+@AllArgsConstructor //parametreli constructor
+@NoArgsConstructor //parametresiz constructor
 @Getter
 @Setter
 @Entity
