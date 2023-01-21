@@ -57,7 +57,7 @@ public class StudentController {
     @GetMapping("/query") //http://localhost:8080/students/query?id=1 birden fazla data istiyorsak
     public ResponseEntity<Student> getStudent(@RequestParam("id") Long id){
        Student student= studentService.findStudent(id);
-        return ResponseEntity.ok(student);
+       return ResponseEntity.ok(student);
         //Hata almak için veya hatasız olduğunu bildirmek için ResponseEntity kullanıyoruz
 
     }
@@ -89,7 +89,7 @@ public class StudentController {
     @PutMapping("{id}") //http://localhost:8080/students/1 + PUT
 
     public ResponseEntity<Map<String,String>> updateStudent(@PathVariable("id") Long id,@Valid @RequestBody Student student){
-
+        studentService.createStudent(student);
         Map<String,String> map = new HashMap<>();
         map.put("message", "Student is deleted successfully");
         map.put("status", "true");

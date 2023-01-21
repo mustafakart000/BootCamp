@@ -23,7 +23,7 @@ public class Student {
 
 
     @NotNull(message = "first name can not be null")
-    @NotBlank(message = "last name can not be empty")
+    @NotBlank(message = "first name can not be empty")
     @Size(min = 2, max =25, message ="FirstName '{validatedValue}' must be between {min} and {max} long")
     @Column(nullable = false, length =25)
     private String name;
