@@ -1,7 +1,7 @@
 package com.tpe.controller;
 
 import com.tpe.domain.Student;
-import com.tpe.repository.StudentRepository;
+
 import com.tpe.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

@@ -33,9 +33,8 @@ public class StudentController {
 
     // !!! Bütün öğrenciler gelsin
     @GetMapping // http://localhost:8080/students + GET
-    public ResponseEntity<List<Student>> getAll(){
+    public ResponseEntity<List<StudentDTO>> getAll(){
         List<Student> students = studentService.getAll();
-
         return ResponseEntity.ok(students); // 200 kodunu HTTP Status kodu olarak gönderir
     }
 
