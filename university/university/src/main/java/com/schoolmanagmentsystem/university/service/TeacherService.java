@@ -13,7 +13,7 @@ public class TeacherService {
 @Autowired
 TeacherRepository teacherRepository;
     public void createTeacher(Teacher teacher) {
-        if (teacherRepository.existsByEmailTeacher(teacher.getEmailTeacher())){
+        if (teacherRepository.existsByEmailTeacher(teacher.getEmailTeacher())) {
            throw new ConflictException("Before That  is created a user by this email ");
         }
         teacherRepository.save(teacher);
