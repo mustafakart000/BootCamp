@@ -2,29 +2,33 @@ package com.schoolmanagmentsystem.university.domain;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
 
 @Getter
 @Setter
 @Entity
-public class Teacher {
+@AllArgsConstructor
+@NoArgsConstructor
+public class Teacher extends Manager {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter(AccessLevel.NONE)
-    private Long idd;
-    @Size(min=2, max=25)
+
+    private Long idTeacher;
+
     private String firstname;
 
-    @Size(min=2, max=25)
-    private String lastName;
 
-    @Email(message="please enter email to comply with the rules")
+    private String lastNameT;
+
+
     private String emailTeacher;
 
+
+    public Teacher(Manager manager) {
+        this.idTeacher = manager.getIdManager();
+        this.firstname = manager.getFirstname();
+        this.lastNameT = manager.getLastnameM();
+        this.emailTeacher = manager.getEmailManager();
+    }
 }

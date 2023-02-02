@@ -8,12 +8,9 @@ import com.schoolmanagmentsystem.university.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 @RestController
 @RequestMapping("/teacher")
@@ -23,6 +20,19 @@ public class TeacherController {
     @Autowired
     TeacherService teacherService;
 
+    @GetMapping("/getallteacher")
+    public ResponseEntity<List<Teacher>> getAllTeachers()  {
+        List<Teacher> teachers = teacherService.getAllTeachers();
+        return ResponseEntity.ok(teachers);
+    }
+
+    @GetMapping("/query")
+    public ResponseEntity<Teacher> getStudentId(@RequestParam("id") Long id){
+        Teacher teacherId= teacherService.getTeacher(id);
+        return ResponseEntity.ok(teacherId);
+    }
+
+//  Ogretmenler kendi profillerini oluşturamazlar bu yetki manager'a aittir farkındalık için yazılmıştır
     @PostMapping
     public ResponseEntity<Map<String,String>> postTeacher(@RequestBody Teacher teacher){
         Map map = new HashMap<String,String>();
@@ -33,6 +43,8 @@ public class TeacherController {
 
         return new ResponseEntity<>(map, HttpStatus.CREATED);
     }
+
+
 
 
 }

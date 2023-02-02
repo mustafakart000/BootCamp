@@ -1,34 +1,32 @@
 package com.schoolmanagmentsystem.university.domain;
 
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
-import javax.validation.constraints.Size;
+
 
 @Setter
 @Getter
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+public class Student  extends Manager{
 
 
+    private Long idStudent;
 
-public class Student {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter(AccessLevel.NONE)
-    private Long id;
-
-    @Size(min=2, max=25)
     private String firstname;
 
-    @Size(min=2, max=25)
-    private String lastName;
+    private String lastNameS;
 
     private String emailStudent;
 
-
+    public Student(Manager manager) {
+        this.idStudent = manager.getIdManager();
+        this.firstname = manager.getFirstname();
+        this.lastNameS =manager.getLastnameM();
+        this.emailStudent = manager.getEmailManager();
+    }
 
 }
