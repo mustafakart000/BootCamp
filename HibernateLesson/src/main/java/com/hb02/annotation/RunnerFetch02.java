@@ -1,4 +1,4 @@
-package com.annotation.hb02;
+package com.hb02.annotation;
 
 
 import org.hibernate.Session;
