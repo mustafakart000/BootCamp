@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ManagerRepository extends JpaRepository<Manager,Long> {
-    boolean existsByEmail(String emailManager);
+    boolean existsByEmailManager(String emailManager);
 }

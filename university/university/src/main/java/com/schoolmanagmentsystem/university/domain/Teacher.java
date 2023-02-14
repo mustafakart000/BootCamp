@@ -11,24 +11,24 @@ import javax.validation.constraints.Size;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class Teacher extends Manager {
+public class Teacher {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idTeacher;
 
     private String firstname;
 
-
     private String lastNameT;
 
-
+    @Email
     private String emailTeacher;
 
 
-    public Teacher(Manager manager) {
-        this.idTeacher = manager.getIdManager();
-        this.firstname = manager.getFirstname();
-        this.lastNameT = manager.getLastnameM();
-        this.emailTeacher = manager.getEmailManager();
-    }
+//    public Teacher(Manager manager) {
+//
+//        this.firstname = manager.getFirstname();
+//        this.lastNameT = manager.getLastnameM();
+//        this.emailTeacher = manager.getEmailManager();
+//    }
 }

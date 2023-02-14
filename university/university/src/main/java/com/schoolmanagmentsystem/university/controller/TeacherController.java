@@ -15,7 +15,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/teacher")
 
-public class TeacherController {
+public class TeacherController  {
 
     @Autowired
     TeacherService teacherService;
@@ -25,25 +25,24 @@ public class TeacherController {
         List<Teacher> teachers = teacherService.getAllTeachers();
         return ResponseEntity.ok(teachers);
     }
-
-    @GetMapping("/query")
-    public ResponseEntity<Teacher> getStudentId(@RequestParam("id") Long id){
-        Teacher teacherId= teacherService.getTeacher(id);
-        return ResponseEntity.ok(teacherId);
-    }
-
-//  Ogretmenler kendi profillerini oluşturamazlar bu yetki manager'a aittir farkındalık için yazılmıştır
-    @PostMapping
-    public ResponseEntity<Map<String,String>> postTeacher(@RequestBody Teacher teacher){
-        Map map = new HashMap<String,String>();
-       teacherService.createTeacher(teacher);
-
-        map.put("message", "Teacher is created successfully");
-        map.put("status", "True");
-
-        return new ResponseEntity<>(map, HttpStatus.CREATED);
-    }
-
+//
+//    @GetMapping("/query")
+//    public ResponseEntity<Teacher> getStudentId(@RequestParam("id") Long id){
+//        Teacher teacherId= teacherService.getTeacher(id);
+//        return ResponseEntity.ok(teacherId);
+//    }
+//
+//    //  Ogretmenler kendi profillerini oluşturamazlar bu yetki manager'a aittir farkındalık için yazılmıştır
+//    @PostMapping
+//    public ResponseEntity<Map<String,String>> postTeacher(@RequestBody Teacher teacher){
+//        Map map = new HashMap<String,String>();
+//        teacherService.createTeacher(teacher);
+//
+//        map.put("message", "Teacher is created successfully");
+//        map.put("status", "True");
+//
+//        return new ResponseEntity<>(map, HttpStatus.CREATED);
+//    }
 
 
 
