@@ -1,6 +1,7 @@
 package com.saferent.service;
 
 import com.saferent.domain.ContactMessage;
+import com.saferent.exception.ResourceNotFoundException;
 import com.saferent.exception.message.ErrorMessage;
 import com.saferent.repository.ContactMessageRepository;
 import org.springframework.data.domain.Page;
@@ -33,7 +34,13 @@ public class ContactMessageService {
 
     public ContactMessage getById(Long id) {
       return  contactMessageRepository.findById(id).
-              orElseThrow(()-> new RuntimeException(String.format(ErrorMessage.ERROR_MESSAGE,id)));
+              orElseThrow(()-> new ResourceNotFoundException(String.format(ErrorMessage.ERROR_MESSAGE,id)));
 
+    }
+
+
+    public void deleteMessage(Long id) {
+        ContactMessage contactMessage = getById(id);
+        contactMessageRepository.delete(contactMessage);
     }
 }

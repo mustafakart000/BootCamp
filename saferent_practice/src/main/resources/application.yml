@@ -11,6 +11,16 @@ spring:
     username: db_user
     password: db_password
     driver-class-name: org.postgresql.Driver
+logging:
+  file:
+    name: log/saferent.log
+  pattern:
+    file: "%d %-5level [%thread] %logger:%msg%n"
+  level:
+    '[org.springframework.web]': WARN
+    '[org.hibernate]': INFO
+    '[com.saferent]': DEBUG
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,32 +28,6 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       '[hibernate.format_sql]': true
-
-
-logging:
-  file:
-    name: log/saferent.log
-  pattern:
-    file: "%d %-5level [%thread] %logger:%msg%n"
-  level:
-    '[org.springframework.web]' : WARN
-    '[org.hibernate]' : INFO
-    '[com.saferent]' : DEBUG
-
-management: #actuator
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  info:
-    env:
-      enabled: true
-  endpoint:
-    health:
-      show-details: always
-    shutdown:
-      enabled: true
-
 
 info:
   application:

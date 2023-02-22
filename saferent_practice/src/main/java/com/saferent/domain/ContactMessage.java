@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 @Getter
 @Setter
 @Entity
-@Table(name = "tbl_cmessage")
+@Table(name = "tbl_cmessage_practice")
 public class ContactMessage {
 
     @Id

@@ -1,11 +1,10 @@
 package com.saferent.repository;
 
-import com.saferent.domain.ContactMessage;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import com.saferent.domain.*;
+import org.springframework.boot.autoconfigure.condition.*;
+import org.springframework.data.jpa.repository.*;
+import org.springframework.stereotype.*;
 
-@Repository
-public interface ContactMessageRepository extends JpaRepository<ContactMessage,Long> {
-
-
+@Repository // optional
+public interface ContactMessageRepository extends JpaRepository<ContactMessage, Long> {
 }

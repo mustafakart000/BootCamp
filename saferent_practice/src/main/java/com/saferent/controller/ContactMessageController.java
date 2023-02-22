@@ -7,7 +7,6 @@ import com.saferent.dto.request.ContactMessageRequest;
 import com.saferent.dto.response.SfResponse;
 import com.saferent.mapper.ContactMessageMapper;
 import com.saferent.service.ContactMessageService;
-import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -33,7 +32,8 @@ public class ContactMessageController {
 
     private final ContactMessageMapper contactMessageMapper;
     private final ContactMessageService contactMessageService;
-
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //Create ContactMessage
 
     @PostMapping("/visitors")
@@ -47,7 +47,7 @@ public class ContactMessageController {
       SfResponse response = new SfResponse("ContactMessage successfully created", true);
       return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
-
+//----------------------------------------------------------------------------------------------------------------------
     //!!! getAll ContactMessages
 
     @GetMapping
@@ -58,7 +58,7 @@ public class ContactMessageController {
         return ResponseEntity.ok(contactMessageDTOList);
 //      OR  return new ResponseEntity<>(contactMessageDTOList, HttpStatus.OK);
     }
-
+//----------------------------------------------------------------------------------------------------------------------
     //!!! pageable
 
     @GetMapping("/pageable")
@@ -73,10 +73,10 @@ public class ContactMessageController {
        Pageable pageable = PageRequest.of(page, size, Sort.by(direction, prop));
       Page<ContactMessage> contactMessagePage= contactMessageService.getAll(pageable);
 
-       Page<ContactMessageDTO> pageDTO= getPageDTO(contactMessagePage);
+       Page<ContactMessageDTO> pageDTO = getPageDTO(contactMessagePage);
        return ResponseEntity.ok(pageDTO);
     }
-
+//----------------------------------------------------------------------------------------------------------------------
     @GetMapping("/{id}")
     public ResponseEntity<ContactMessageDTO> getContactMessageById(@PathVariable("id") Long id){
 
@@ -88,26 +88,26 @@ public class ContactMessageController {
 
     }
 
+//----------------------------------------------------------------------------------------------------------------------
+    @GetMapping("/request")
+    public ResponseEntity<ContactMessageDTO> getMessageWithRequestParam(
 
+            @RequestParam("id") Long id){
 
+       ContactMessage contactMessage = contactMessageService.getById(id);
+       ContactMessageDTO contactMessageDTO = contactMessageMapper.contactMessageToDTO(contactMessage);
+        return ResponseEntity.ok(contactMessageDTO);
+    }
+//----------------------------------------------------------------------------------------------------------------------
+    @DeleteMapping("/{id}")
+    public ResponseEntity<SfResponse> deleteByID(@PathVariable("id") @Valid Long id){
 
+        contactMessageService.deleteMessage(id);
+        SfResponse response = new SfResponse("ContactMessage successfully deleted",true);
+        return  ResponseEntity.ok(response);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//----------------------------------------------------------------------------------------------------------------------
 
     //!!! getPageDTO
 
@@ -116,6 +116,4 @@ public class ContactMessageController {
                 map(contactMessage -> contactMessageMapper.contactMessageToDTO(contactMessage));
             //burada ki map page den geliyor.
     }
-
-
 }
