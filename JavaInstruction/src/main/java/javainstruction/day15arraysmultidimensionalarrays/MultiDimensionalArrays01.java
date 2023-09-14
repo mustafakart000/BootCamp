@@ -59,7 +59,7 @@ public class MultiDimensionalArrays01 {
             for (String[] w : brr) {
                 sum = sum + w.length;
             }
-            System.out.println(sum);
+            System.out.println(sum); //12
         }
 
         }

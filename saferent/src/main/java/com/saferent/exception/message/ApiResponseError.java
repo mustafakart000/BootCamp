@@ -13,7 +13,7 @@ public class ApiResponseError {
     private HttpStatus status;
 
     @JsonFormat(shape=JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
-    private LocalDateTime timestamp;
+    private LocalDateTime timestamp; //exception fırlama anı
 
     private String message;
 

@@ -55,6 +55,19 @@ public class SafeRentExceptionHandler extends ResponseEntityExceptionHandler {
 
     return  buildResponseEntity(error);
 }
+
+//----------------------------------------------------------------------------------------------------------------------
+
+    @ExceptionHandler(ConflictException.class)
+    protected ResponseEntity<Object> handleConflictException(
+            ConflictException ex, WebRequest request){
+
+        ApiResponseError error = new ApiResponseError(HttpStatus.CONFLICT,
+                ex.getMessage(), request.getDescription(false));
+        return buildResponseEntity(error);
+    }
+
+
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
     //DEFAULT (HANDLE) EXCEPTION
@@ -80,6 +93,7 @@ public class SafeRentExceptionHandler extends ResponseEntityExceptionHandler {
 
         return  buildResponseEntity(error);    }
 //----------------------------------------------------------------------------------------------------------------------
+
     @Override
     protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException ex,
                                                                   HttpHeaders headers,

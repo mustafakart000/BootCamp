@@ -1,16 +1,15 @@
 package com.saferent.dto.request;
 
-import com.saferent.domain.*;
-import lombok.*;
 
-import javax.persistence.*;
+import lombok.*;
 import javax.validation.constraints.*;
-import java.util.*;
+
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class RegisterRequest {
 
     @Size(max=50)
@@ -32,7 +31,7 @@ public class RegisterRequest {
 
     @Pattern(regexp = "^((\\(\\d{3}\\))|\\d{3})[- .]?\\d{3}[- .]?\\d{4}$", //(541) 317-8828
             message = "Please provide valid phone number")
-    @Size(min=14, max=14)
+    @Size( max=14)
     @NotBlank(message = "Please provide your phone number")
     private String phoneNumber;
 

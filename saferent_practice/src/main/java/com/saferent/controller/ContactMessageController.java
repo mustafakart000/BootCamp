@@ -23,7 +23,7 @@ import java.util.List;
 @RequestMapping("/contactmessage")
 public class ContactMessageController {
 
-
+//Autowride field'lar için cok guvenlı yapılar olmadığı için constructor yapısını kullanıyoruz
     public ContactMessageController(ContactMessageMapper contactMessageMapper,
                                     ContactMessageService contactMessageService) {
         this.contactMessageMapper = contactMessageMapper;

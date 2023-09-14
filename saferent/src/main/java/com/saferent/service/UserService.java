@@ -3,11 +3,12 @@ package com.saferent.service;
 import com.saferent.domain.*;
 import com.saferent.domain.Role;
 import com.saferent.domain.enums.*;
+import com.saferent.dto.UserDTO;
 import com.saferent.dto.request.*;
 import com.saferent.exception.*;
 import com.saferent.exception.message.*;
+import com.saferent.mapper.UserMapper;
 import com.saferent.repository.*;
-import org.springframework.beans.factory.annotation.*;
 import org.springframework.context.annotation.*;
 import org.springframework.security.crypto.password.*;
 import org.springframework.stereotype.*;
@@ -23,12 +24,16 @@ public class UserService {
 
     private final RoleService roleService;
 
-
+    private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
 
-    public UserService(UserRepository userRepository, RoleService roleService, @Lazy PasswordEncoder passwordEncoder) {
+    public UserService(UserRepository userRepository, RoleService roleService,
+                       UserMapper userMapper,
+                       @Lazy PasswordEncoder passwordEncoder) {
+
         this.userRepository = userRepository;
         this.roleService = roleService;
+        this.userMapper = userMapper;
         this.passwordEncoder = passwordEncoder;
     }
 
@@ -71,4 +76,14 @@ public class UserService {
         userRepository.save(user);
 
     }
+
+    public List<UserDTO> getAllUsers() {
+
+         List<User> users = userRepository.findAll();
+
+        return userMapper.map(users);
+
+    }
+
+
 }

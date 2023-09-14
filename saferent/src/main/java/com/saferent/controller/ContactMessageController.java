@@ -22,6 +22,7 @@ public class ContactMessageController {
 
     private final ContactMessageMapper contactMessageMapper;
 
+
     //@Autowired
     public ContactMessageController(ContactMessageService contactMessageService, ContactMessageMapper contactMessageMapper) {
         this.contactMessageService = contactMessageService;
