@@ -1,0 +1,10 @@
+
+j
+java:S1104"OMake saw a static final constant or non-public and provide accessors if needed.(ïáêÆùÿÿÿÿ
+D
+java:S1444")Make this "public static saw" field final(ïáêÆùÿÿÿÿ
+œ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(øÙÿÿÿÿÿ
+o
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÃÄÏ¹
+V	java:S125%"<This block of commented-out lines of code should be removed.(õ™ıâÿÿÿÿÿ

@@ -1,0 +1,8 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ßþñæûÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶¸´œùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ð€èùÿÿÿÿ
+^
+java:S1128"HRemove this unused import 'chooseCorrectCombination.TakeBetweenTwoPlus'.(úàæŠ

@@ -1,0 +1,20 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÖËÓúÿÿÿÿ
+L
+java:S1117"6Rename "ct" which hides the field declared at line 20.(³¥çˆ
+U
+java:S1117":Rename "equals" which hides the field declared at line 23.(×ÛÜ­ýÿÿÿÿ
+T
+java:S1117"9Rename "ctNum" which hides the field declared at line 21.(‡ž³œûÿÿÿÿ
+P
+java:S1117";Rename "twoPlus" which hides the field declared at line 22.(ô„¼<
+V
+java:S1117&";Rename "twoPlus" which hides the field declared at line 22.(‡·¸²ùÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+G
+java:S1128",Remove this unused import 'java.util.Stack'.(ÞÈ†üúÿÿÿÿ
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+P
+java:S1128":Remove this unused import 'java.util.stream.DoubleStream'.(óÖÐ©
