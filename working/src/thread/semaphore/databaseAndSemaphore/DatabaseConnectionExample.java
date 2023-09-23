@@ -1,6 +1,6 @@
 package thread.semaphore.databaseAndSemaphore;
 
-import java.util.List;
+
 import java.util.concurrent.Semaphore;
 
 public class DatabaseConnectionExample {

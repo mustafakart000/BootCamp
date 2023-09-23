@@ -12,12 +12,16 @@ public class MySqlAndSemaphorePractice {
     private Connection dbConnection;
 
     public MySqlAndSemaphorePractice( ) {
-        this.semaphore = new Semaphore(MAX_DB_CONNECTIONS);
+         this.semaphore = new Semaphore(MAX_DB_CONNECTIONS);
     }
 
     public void connectToDatabase() throws InterruptedException, SQLException {
 
-        semaphore.acquire();
+        while (semaphore.availablePermits() < 3) {
+            // Wait until a permit is available.
+            System.out.println("Wait until a permit is available.");
+        }
+        semaphore.acquire(1);
 
         dbConnection = DriverManager.getConnection(DB_URL, DB_USER,DB_PASSWORD);
 
