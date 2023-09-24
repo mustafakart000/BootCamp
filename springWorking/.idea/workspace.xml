@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d129ca5-f637-4461-9312-4b2ce9ab5091" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Student/StudentConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Student/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Student/StudentRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Student/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/AnnatationBase/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/AnnatationBase/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/AnnatationBase/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/AnnatationBase/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/AnnatationBase/Cycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/AnnatationBase/Traveler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/AnnatationBase/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/JavaBaseConfig/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/JavaBaseConfig/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/JavaBaseConfig/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/JavaBaseConfig/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/JavaBaseConfig/Cycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/JavaBaseConfig/Traveller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/JavaBaseConfig/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/streoType/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/streoType/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/streoType/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/streoType/repository/DemoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/src/main/java/com/spring/core/springConfig/streoType/service/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/highlightedFiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../working/src/springConfig/JavaBaseConfig/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../working/src/springConfig/JavaBaseConfig/Bike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../working/src/springConfig/JavaBaseConfig/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../working/src/springConfig/JavaBaseConfig/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../working/src/springConfig/JavaBaseConfig/Cycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../working/src/springConfig/JavaBaseConfig/Traveller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../working/src/springConfig/JavaBaseConfig/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPattern" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPattern" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SB_School_Managment_System" beforeDir="false" afterPath="$PROJECT_DIR$/../SB_School_Managment_System" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learn-maven-spring-framework/target/classes/howToDoBeanConfiguration/configuration/AppConfugiration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../learn-maven-spring-framework/target/classes/howToDoBeanConfiguration/configuration/AppConfugiration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-springboot-crud" beforeDir="false" afterPath="$PROJECT_DIR$/../react-springboot-crud" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../saferent/src/main/java/com/saferent/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../saferent/src/main/java/com/saferent/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-ecommerce-step-by-step" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-ecommerce-step-by-step" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../working/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../working/.idea/dbnavigator.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2W6CkTjkGoi3tN0ZDv2IwxBNxU6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d129ca5-f637-4461-9312-4b2ce9ab5091" name="Changes" comment="" />
+      <created>1696043788120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696043788120</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -40,10 +40,6 @@ public class UserController {
         return ResponseEntity.ok(userDTO);
     }
 
-    public UserDTO getPrincipal(){
 
-    }
-
-    public User get
 
 }
