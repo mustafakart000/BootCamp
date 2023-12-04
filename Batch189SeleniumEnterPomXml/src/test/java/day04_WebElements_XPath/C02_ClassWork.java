@@ -17,12 +17,26 @@ public class C02_ClassWork {
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         webDriver.get("https://testcenter.techproeducation.com/index.php");
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        System.out.println(webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)));
         WebElement button = webDriver.findElement(By.partialLinkText("Back to TechProEducation.com"));
         button.click();
 
         //"Application Lists" basliğini tagname ile locate ederek görünür olup olmadığını test ediniz.
-        webDriver.findElement(By.tagName("h1"));
+
+        WebElement applicationsLists = webDriver.findElement(By.tagName("h1"));
+
+        System.out.println("Actual Result: " + applicationsLists);
+
+        if (applicationsLists.isDisplayed()) {
+            System.out.println("Test passed " + applicationsLists.getText());
+        }else {
+            System.out.println("Test failed " + applicationsLists.getText());
+        }
+
+
+
+
+
 
     }
 }
